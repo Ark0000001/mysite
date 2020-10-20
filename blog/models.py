@@ -28,6 +28,7 @@ class Post(models.Model):
     published = PublishedManager()
     tags = TaggableManager()
 
+
     class Meta:
         ordering = ('-publish',)
 
