@@ -19,12 +19,12 @@
             {{ comment.body|linebreaks }}
         </div>
     {% empty %}
-        <p>There are no comments yet.</p>
+        <p>Пока нет комментариев.</p>
     {% endfor %}
     {% if new_comment %}
-        <h2>Your comment has been added.</h2>
+        <h2>Ваш комментарий был добавлен.</h2>
     {% else %}
-        <h2>Add a new comment</h2>
+        <h2>Добавить новый комментарий.</h2>
         <form action="." method="post">
             {{ comment_form.as_p }}
             {% csrf_token %}
